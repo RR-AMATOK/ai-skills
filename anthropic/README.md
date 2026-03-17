@@ -1,6 +1,3 @@
-# ai-skills
-This is a repository for all skills, ideally it will be complemented as time goes by for the different AIs
-=======
 # LeanIX Scripts - Claude Skills
 
 This folder contains custom Claude Skills for the LeanIX Scripts project. These skills help with common tasks and workflows.
