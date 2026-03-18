@@ -1,0 +1,135 @@
+AI Skills Framework - Complete Directory Tree
+==============================================
+
+ai-skills/
+│
+├── 📋 Configuration Files
+│   ├── agent-config.json              # Main config - defines providers & memory
+│   ├── agent-config.schema.json      # JSON schema for validation
+│   └── .gitignore                     # Privacy & security rules
+│
+├── 📚 Documentation
+│   ├── README.md                      # 🌟 START HERE - Quick start & overview
+│   ├── GETTING_STARTED.md            # Setup checklist for new users
+│   ├── AGENT_INIT.md                 # Technical initialization guide
+│   ├── EXAMPLES.md                   # Usage examples & troubleshooting
+│   ├── STRUCTURE.md                  # Complete structure explanation
+│   ├── ARCHITECTURE.md               # System architecture & flows
+│   ├── INSTALLATION_COMPLETE.md      # Installation summary
+│   ├── DIRECTORY_TREE.txt            # This file
+│   └── LICENSE                       # License information
+│
+├── 🚀 Setup & Utilities
+│   └── setup.sh                       # Initialization script (executable)
+│
+├── 🤖 Provider Folders (Skills by AI Provider)
+│   │
+│   ├── anthropic/                     # Claude (Anthropic) skills
+│   │   ├── README.md
+│   │   ├── analyze-script.md
+│   │   ├── create-script.md
+│   │   ├── debug-auth.md
+│   │   ├── setup-env.md
+│   │   ├── validate-setup.md
+│   │   └── [other Claude-specific skills...]
+│   │
+│   ├── openai/                        # GPT/ChatGPT (OpenAI) skills
+│   │   └── [Add GPT-specific skills here]
+│   │
+│   ├── google/                        # Gemini (Google) skills
+│   │   └── [Add Gemini-specific skills here]
+│   │
+│   └── shared/                        # Cross-provider skills
+│       └── [Add provider-agnostic skills here]
+│
+└── 🧠 Memory System (Persistent Learning)
+    └── memory/
+        ├── README.md                  # Memory system documentation
+        │
+        ├── 📝 Templates (Tracked in Git)
+        │   ├── MEMORY.md.template
+        │   ├── patterns.md.template
+        │   └── debugging.md.template
+        │
+        └── 💾 Active Files (NOT tracked in Git - Local only)
+            ├── MEMORY.md              # Main memory (auto-loaded)
+            ├── patterns.md            # Detailed patterns
+            └── debugging.md           # Troubleshooting notes
+
+
+Key Symbols:
+============
+📋 = Configuration    🤖 = AI Skills      📝 = Templates (Git tracked)
+📚 = Documentation    🧠 = Memory System  💾 = Active Data (Local only)
+🚀 = Setup Scripts    🌟 = Start here
+
+
+File Count Summary:
+===================
+Configuration:     3 files
+Documentation:     9 files
+Setup Scripts:     1 file
+Provider Folders:  4 folders (1 populated, 3 ready)
+Memory System:     7 files (3 templates + 3 active + 1 README)
+Total:            20+ files
+
+
+Git Tracking:
+=============
+✅ TRACKED (Committed to Git):
+   • All configuration files
+   • All documentation files
+   • Setup scripts
+   • Provider folders & skills
+   • Memory templates (*.template)
+   • .gitignore
+
+❌ NOT TRACKED (Local Only):
+   • Active memory files (MEMORY.md, patterns.md, debugging.md)
+   • Local overrides (*.local.*)
+   • Personal notes & drafts
+   • Secrets & credentials
+   • Temporary files
+
+
+How Agents Use This Structure:
+===============================
+
+1. Agent starts
+2. Reads: agent-config.json
+3. Detects model (e.g., "claude-4")
+4. Maps to provider (e.g., "anthropic")
+5. Loads skills from: ./anthropic/
+6. Loads memory from: ./memory/MEMORY.md
+7. Ready to assist with context!
+
+
+Quick Commands:
+===============
+
+# Initialize memory system
+./setup.sh
+
+# View configuration
+cat agent-config.json
+
+# List provider skills
+ls -la anthropic/
+ls -la openai/
+ls -la google/
+
+# View memory
+cat memory/MEMORY.md
+
+# Check git status
+git status
+
+
+For More Information:
+======================
+- Quick Start: README.md
+- Setup Guide: GETTING_STARTED.md
+- How It Works: AGENT_INIT.md
+- Examples: EXAMPLES.md
+- Architecture: ARCHITECTURE.md
+

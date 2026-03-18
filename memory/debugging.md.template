@@ -1,0 +1,80 @@
+# Debugging and Troubleshooting Template
+
+This file documents solutions to recurring problems and debugging insights.
+
+**IMPORTANT**: This is a template file. Copy it to `debugging.md` to start using it:
+```bash
+cp debugging.md.template debugging.md
+```
+
+## Common Issues
+
+### Issue: [Issue Name]
+- **Problem**: [Description of the problem]
+- **Cause**: [What causes this issue]
+- **Solution**: [How to fix it]
+- **Prevention**: [How to avoid it in the future]
+
+## Environment-Specific Issues
+
+### Local Development
+- [Document local environment issues and solutions]
+
+### Production Issues
+- [Document production-specific issues]
+
+## Tool-Specific Issues
+
+### [Tool Name]
+- [Document issues specific to particular tools]
+- [Note version-specific problems]
+
+## Performance Issues
+
+### Slow Performance
+- [Document performance bottlenecks]
+- [Note optimization solutions]
+
+### Memory Issues
+- [Document memory-related problems]
+- [Note solutions and workarounds]
+
+## Integration Issues
+
+### API Issues
+- [Document API-related problems]
+- [Note authentication/authorization issues]
+
+### Third-Party Services
+- [Document issues with external services]
+- [Note rate limiting solutions]
+
+## Debugging Techniques
+
+### Effective Approaches
+- [Document debugging strategies that work well]
+- [Note tools and techniques used]
+
+### Logging and Monitoring
+- [Document logging practices]
+- [Note what to monitor]
+
+## Quick Fixes
+
+### Command Reference
+```bash
+# [Description]
+# [Command]
+
+# [Description]
+# [Command]
+```
+
+## Resources
+
+### Useful Links
+- [Add links to documentation]
+- [Add links to troubleshooting guides]
+
+### Support Contacts
+- [Add relevant contact information]

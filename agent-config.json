@@ -1,0 +1,54 @@
+{
+  "$schema": "./agent-config.schema.json",
+  "version": "1.0.0",
+  "description": "AI Skills configuration for multi-provider agent support",
+
+  "providers": {
+    "anthropic": {
+      "models": ["claude-4", "claude-3", "claude"],
+      "skillsPath": "./anthropic",
+      "enabled": true,
+      "description": "Skills for Anthropic's Claude models"
+    },
+    "openai": {
+      "models": ["gpt-4", "gpt-3.5", "chatgpt"],
+      "skillsPath": "./openai",
+      "enabled": false,
+      "description": "Skills for OpenAI's GPT models"
+    },
+    "google": {
+      "models": ["gemini", "palm"],
+      "skillsPath": "./google",
+      "enabled": false,
+      "description": "Skills for Google's AI models"
+    },
+    "custom": {
+      "models": [],
+      "skillsPath": "./custom",
+      "enabled": false,
+      "description": "Custom skills for other providers"
+    }
+  },
+
+  "memory": {
+    "enabled": true,
+    "path": "./memory",
+    "mainFile": "MEMORY.md",
+    "maxMainFileLines": 200,
+    "autoLoad": true,
+    "description": "Persistent memory across agent sessions"
+  },
+
+  "settings": {
+    "autoDetectProvider": true,
+    "fallbackProvider": "anthropic",
+    "loadSharedSkills": true,
+    "sharedSkillsPath": "./shared"
+  },
+
+  "initialization": {
+    "readConfigFirst": true,
+    "loadMemoryOnStart": true,
+    "scanAvailableSkills": true
+  }
+}
