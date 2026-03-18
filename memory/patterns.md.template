@@ -1,0 +1,63 @@
+# Patterns and Best Practices Template
+
+This file documents detailed patterns and best practices for using AI skills effectively.
+
+**IMPORTANT**: This is a template file. Copy it to `patterns.md` to start using it:
+```bash
+cp patterns.md.template patterns.md
+```
+
+## General Patterns
+
+### Effective Skill Usage
+- [Document patterns that work well]
+- [Note combinations of skills that are particularly effective]
+
+### Project-Specific Patterns
+- [Document patterns specific to your projects]
+- [Note conventions and standards]
+
+## Code Patterns
+
+### Architecture Patterns
+- [Document architectural decisions]
+- [Note design patterns used]
+
+### Integration Patterns
+- [Document how different systems integrate]
+- [Note API patterns and conventions]
+
+## Workflow Patterns
+
+### Development Workflow
+- [Document your typical workflow]
+- [Note tools and processes used]
+
+### Testing Patterns
+- [Document testing approaches]
+- [Note coverage expectations]
+
+## Communication Patterns
+
+### Documentation Style
+- [Preferred documentation format]
+- [Level of detail expected]
+
+### Code Comments
+- [When to add comments]
+- [Comment style preferences]
+
+## Anti-Patterns
+
+### What to Avoid
+- [Document patterns that don't work well]
+- [Note common mistakes to avoid]
+
+## Resources
+
+### Reference Links
+- [Add links to relevant documentation]
+- [Add links to style guides]
+
+### Examples
+- [Add links or references to good examples]

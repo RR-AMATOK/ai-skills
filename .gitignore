@@ -1,6 +1,38 @@
 # AI Skills .gitignore
 # This directory contains Claude Code AI skills
 
+# =============================================================================
+# MEMORY SYSTEM - Keep templates, exclude personal memory files
+# =============================================================================
+# Include templates (tracked in git)
+!memory/*.template
+
+# Exclude actual memory files (personal/local data)
+memory/MEMORY.md
+memory/patterns.md
+memory/debugging.md
+memory/integrations.md
+memory/*.md
+# But keep the README
+!memory/README.md
+
+# =============================================================================
+# CONFIGURATION - Keep templates, exclude local overrides
+# =============================================================================
+# Local configuration overrides (not tracked)
+agent-config.local.json
+skill.local.*
+*.local.md
+*.local.json
+
+# User-specific provider folders (if someone adds their own)
+# The base providers (anthropic, openai, google) are tracked
+# But exclude any personal/custom additions
+custom/*.local.*
+
+# =============================================================================
+# TEMPORARY FILES AND ARTIFACTS
+# =============================================================================
 # Temporary test files
 *.tmp
 *.temp
@@ -31,11 +63,52 @@ NOTES.local
 # Skill execution logs (if generated locally)
 skill-logs/
 execution-logs/
+logs/
+*.log
 
-# Any local skill configuration overrides
-skill.local.*
-*.local.md
+# =============================================================================
+# ENVIRONMENT AND SECRETS
+# =============================================================================
+# Never commit secrets or environment-specific data
+.env
+.env.local
+.env.*.local
+secrets/
+credentials/
+*.key
+*.pem
+*.cert
 
-# OS-specific files (belt & suspenders - parent .gitignore has these too)
+# =============================================================================
+# OS-SPECIFIC FILES
+# =============================================================================
 .DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
 Thumbs.db
+desktop.ini
+
+# =============================================================================
+# IDE AND EDITOR FILES
+# =============================================================================
+.vscode/*.local.*
+.idea/*.local.*
+
+# =============================================================================
+# NODE MODULES (if any skills use npm)
+# =============================================================================
+node_modules/
+package-lock.json
+
+# =============================================================================
+# PYTHON (if any skills use Python)
+# =============================================================================
+__pycache__/
+*.py[cod]
+*$py.class
+.pytest_cache/
+.venv/
+venv/

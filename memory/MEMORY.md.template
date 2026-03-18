@@ -1,0 +1,68 @@
+# AI Skills Memory Template
+
+This file tracks learnings, patterns, and insights about AI skills to improve performance and results over time.
+
+**IMPORTANT**: This is a template file. Copy it to `MEMORY.md` to start using it:
+```bash
+cp MEMORY.md.template MEMORY.md
+```
+
+## Skill Usage Patterns
+
+### Successful Approaches
+- Track what works well for different types of tasks
+- Note effective prompting patterns
+- Record optimal skill configurations
+
+### Common Issues & Solutions
+- Document recurring problems and their fixes
+- Track edge cases and how to handle them
+- Note any limitations or workarounds
+
+## Performance Insights
+
+### Response Quality
+- Track which approaches yield better results
+- Note factors that improve output quality
+- Document user preferences for skill behavior
+
+### Efficiency Tips
+- Record faster ways to accomplish common tasks
+- Note which skills work best in combination
+- Track resource usage patterns
+
+## User Preferences
+
+### Workflow Preferences
+- Note preferred skill invocation patterns
+- Track customization preferences
+- Document feedback on skill behavior
+
+### Communication Style
+- Record preferred output formats
+- Note verbosity preferences
+- Track formatting preferences
+
+## Context-Specific Learnings
+
+### Project Structure
+- Document relevant file locations
+- Note project-specific conventions
+- Track integration patterns
+
+### Your Projects
+[Add your project-specific information here]
+
+## Skill-Specific Notes
+
+### [Skill Name]
+- Purpose and use cases
+- Best practices
+- Known limitations
+
+## Notes
+- Keep this file updated with new learnings
+- Create separate topic files for detailed notes (link them here)
+- Remove or update outdated information
+- Verify patterns across multiple uses before documenting
+- Keep under 200 lines for optimal loading

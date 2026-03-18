@@ -1,0 +1,79 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Agent Configuration Schema",
+  "description": "Schema for AI agent skills configuration",
+  "type": "object",
+  "properties": {
+    "version": {
+      "type": "string",
+      "description": "Configuration version"
+    },
+    "description": {
+      "type": "string"
+    },
+    "providers": {
+      "type": "object",
+      "description": "AI model providers and their configurations",
+      "additionalProperties": {
+        "type": "object",
+        "properties": {
+          "models": {
+            "type": "array",
+            "items": { "type": "string" },
+            "description": "Model names that use this provider"
+          },
+          "skillsPath": {
+            "type": "string",
+            "description": "Path to skills folder for this provider"
+          },
+          "enabled": {
+            "type": "boolean",
+            "description": "Whether this provider is active"
+          },
+          "description": {
+            "type": "string"
+          }
+        },
+        "required": ["models", "skillsPath", "enabled"]
+      }
+    },
+    "memory": {
+      "type": "object",
+      "properties": {
+        "enabled": {
+          "type": "boolean"
+        },
+        "path": {
+          "type": "string"
+        },
+        "mainFile": {
+          "type": "string"
+        },
+        "maxMainFileLines": {
+          "type": "number"
+        },
+        "autoLoad": {
+          "type": "boolean"
+        }
+      }
+    },
+    "settings": {
+      "type": "object",
+      "properties": {
+        "autoDetectProvider": {
+          "type": "boolean"
+        },
+        "fallbackProvider": {
+          "type": "string"
+        },
+        "loadSharedSkills": {
+          "type": "boolean"
+        },
+        "sharedSkillsPath": {
+          "type": "string"
+        }
+      }
+    }
+  },
+  "required": ["version", "providers", "memory"]
+}
