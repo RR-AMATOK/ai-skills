@@ -1,0 +1,41 @@
+# AI Skills .gitignore
+# This directory contains Claude Code AI skills
+
+# Temporary test files
+*.tmp
+*.temp
+temp/
+tmp/
+scratch/
+sandbox/
+
+# Editor backup files
+*~
+*.bak
+*.swp
+*.swo
+*#
+
+# Local development and testing artifacts
+.test/
+test-output/
+debug/
+*.debug
+
+# Personal notes and drafts (keep skill definitions)
+notes/
+drafts/
+TODO.local
+NOTES.local
+
+# Skill execution logs (if generated locally)
+skill-logs/
+execution-logs/
+
+# Any local skill configuration overrides
+skill.local.*
+*.local.md
+
+# OS-specific files (belt & suspenders - parent .gitignore has these too)
+.DS_Store
+Thumbs.db
