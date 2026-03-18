@@ -148,4 +148,4 @@ To contribute skills:
 
 ## License
 
-[Add your license here]
+[LICENSE](https://github.com/RR-AMATOK/ai-skills/blob/main/LICENSE)
